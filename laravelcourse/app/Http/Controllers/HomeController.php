@@ -28,8 +28,10 @@ class HomeController extends Controller
   public function contact(): View
   {
     $viewData = [];
+    $viewData["title"] = "Contact - Online Store"; 
+    $viewData["subtitle"] =  "Contact"; 
     $viewData["email"] = "info@gmail.com";
-    $viewData["addess"] = "info@gmail.com";
+    $viewData["address"] = "Cr 13 No. 90-36 OF 502";
     $viewData["phoneNumber"] = "+57 123 456 789";
     return view('home.contact')->with("viewData", $viewData);
   }
